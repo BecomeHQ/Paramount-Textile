@@ -47,7 +47,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
    * Scrollbar
    */
 
-  scrollbar()
+  //Run only on Desktop & tablet
+  if (window.innerWidth > 766) {
+    scrollbar()
+  }
 
   /**
    * Text Link Hover Interaction
