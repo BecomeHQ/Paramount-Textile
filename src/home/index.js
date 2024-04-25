@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
    * Text Link Hover Interaction
    */
 
-  linkHoverIx()
+  //   linkHoverIx()
 
   /**
    * Navbar Interaction

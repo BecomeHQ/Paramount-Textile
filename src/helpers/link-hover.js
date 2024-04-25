@@ -2,8 +2,8 @@ import { gsap } from 'gsap'
 
 export const linkHoverIx = () => {
   $('[link]').each(function (index) {
-    let listOne = $(this).find('[link_text_is-1] .char')
-    let listTwo = $(this).find('[link_text_is-2] .char')
+    // let listOne = $(this).find('[link_text_is-1] .char')
+    // let listTwo = $(this).find('[link_text_is-2] .char')
     let line = $(this).find('[line]')
 
     // Timeline
