@@ -10,6 +10,19 @@ export const sectionVideoClipIx = () => {
       start: 'top top',
       scrub: true,
       smoothing: 0.9,
+      onToggle: (self) => {
+        if (self.isActive) {
+          gsap.to('.navbar_component', {
+            opacity: 0,
+            pointerEvents: 'none',
+          })
+        } else {
+          gsap.to('.navbar_component', {
+            opacity: 1,
+            pointerEvents: 'unset',
+          })
+        }
+      },
     },
   })
   videoClip.to('[long-scroll-section] .video-clip', {

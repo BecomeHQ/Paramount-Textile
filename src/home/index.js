@@ -46,8 +46,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
    * Scrollbar
    */
 
-  //Run only on Desktop & tablet
-  if (window.innerWidth > 766) {
+  //Run only on Desktop
+  if (window.innerWidth > 990) {
     scrollbar()
   }
 
@@ -63,13 +63,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   if (windowWidth > 990) {
     navlinkHoverIx()
+
+    /**
+     * Section Hero timeline for Home Page Desktop
+     */
+
+    sectionHeroTl()
   }
-
-  /**
-   * Section Hero timeline for Home Page
-   */
-
-  sectionHeroTl()
 
   /**
    * Product Timeline for Home Page Start
@@ -155,7 +155,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
    * Cotton Plant Animation
    */
 
-  cottonPlantMoveIx()
+  cottonPlantMoveIx(6)
 
   /**
    * Paramount Fixed Logo Hover Interaction
