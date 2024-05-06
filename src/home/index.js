@@ -6,7 +6,6 @@ console.log('Hello from Home folder')
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { linkHoverIx } from '../helpers/link-hover'
 import { navlinkHoverIx } from '../helpers/navlink-hover'
 import { sectionHeroTl } from './section-hero'
 import { cottonPlantMoveIx } from '../helpers/cotton-plant-move'
@@ -62,7 +61,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
    * Navbar Interaction
    */
 
-  navlinkHoverIx()
+  if (windowWidth > 990) {
+    navlinkHoverIx()
+  }
 
   /**
    * Section Hero timeline for Home Page
