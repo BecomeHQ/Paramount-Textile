@@ -5,6 +5,7 @@ console.log('From Initiatives folder')
 
 import { cottonPlantMoveIx } from '../helpers/cotton-plant-move'
 import { scrollbar } from '../helpers/scrollbar'
+import { navlinkHoverIx } from '../helpers/navlink-hover'
 import { sectionInitiativeHeroIx } from './section-initiative-hero'
 
 window.addEventListener('DOMContentLoaded', (event) => {
@@ -15,6 +16,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   // Random Cotton Flow
   cottonPlantMoveIx()
+
+  // Navlink Hover
+  navlinkHoverIx()
 
   // Section Hero
   //   sectionInitiativeHeroIx()
