@@ -61,15 +61,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
    * Navbar Interaction
    */
 
-  if (windowWidth > 990) {
-    navlinkHoverIx()
+  navlinkHoverIx()
 
-    /**
-     * Section Hero timeline for Home Page Desktop
-     */
+  /**
+   * Section Hero timeline for Home Page Desktop
+   */
 
-    sectionHeroTl()
-  }
+  sectionHeroTl()
 
   /**
    * Product Timeline for Home Page Start

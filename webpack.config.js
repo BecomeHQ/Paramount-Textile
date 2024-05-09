@@ -7,6 +7,7 @@ module.exports = {
     ['home']: './src/home/index.js',
     ['about']: './src/about/index.js',
     ['initiatives']: './src/initiatives/index.js',
+    ['products']: './src/products/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

@@ -1,24 +1,22 @@
 /**
- * Initiatives Page Code
- *
- * Whenever Importing HeaderIx() always add Splittext()
+ * Products Page Code
  */
-console.log('From Initiatives folder')
+console.log('From Products folder')
 
 import { cottonPlantMoveIx } from '../helpers/cotton-plant-move'
 import { scrollbar } from '../helpers/scrollbar'
 import { navlinkHoverIx } from '../helpers/navlink-hover'
-import { sectionInitiativeHeroIx } from './section-initiative-hero'
+import { sectionProductHeroIx } from './section-product-hero'
 import { headerIx } from '../helpers/header'
 import { splitText } from '../helpers/split-text'
-import { featureBlockIx } from './feature-block'
+import { textRevealIx } from './text-reveal'
+import { productMockUpIx } from './product-mockups'
+import { sectionProductTop } from './section-product-top'
 
 window.addEventListener('DOMContentLoaded', (event) => {
-  // SplitText
+  // Split text. This will run on window resize also
   splitText()
 
-  // Header
-  const delayIx = headerIx()
   // Scrollbar
   scrollbar()
 
@@ -28,9 +26,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
   // Navlink Hover
   navlinkHoverIx()
 
-  // Section Hero
-  sectionInitiativeHeroIx(delayIx)
+  const delayIx = headerIx()
+  sectionProductHeroIx(delayIx)
 
-  // Animate all Features blocks
-  featureBlockIx()
+  // Reveal Sections
+  sectionProductTop()
+  productMockUpIx()
+  textRevealIx()
 })
