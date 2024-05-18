@@ -12,9 +12,9 @@ export const productSectionHeroIx = (delay) => {
   leafIcon.delay = delay * 0.8
   generalTitle.stagger.amount = 0.8
 
-  tl.from('.layout_center_title > img', leafIcon)
-    .from('.layout_center_title h1 .char', generalTitle, '<45%')
-    .from('.layout_center-wrapper p .line', paragraph, '<45%')
+  tl.from('[layout-name="product-hero"] img', leafIcon)
+    .from('[layout-name="product-hero"] h1 .char', generalTitle, '<45%')
+    .from('[layout-name="product-hero"] p .line', paragraph, '<45%')
     .from(
       '[product-hero-img-wrap]',
       { scale: 0.8, duration: 4, ease: 'expo.out' },
