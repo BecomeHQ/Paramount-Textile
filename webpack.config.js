@@ -10,6 +10,7 @@ module.exports = {
     ['products']: './src/products/index.js',
     ['products/madeups']: './src/products/madeups/index.js',
     ['products/fabrics']: './src/products/fabrics/index.js',
+    ['products/yarn']: './src/products/yarn/index.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
