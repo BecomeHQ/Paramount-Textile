@@ -1,8 +1,8 @@
 /**
- * MadeUps Folder
+ * Yarn Folder
  */
 
-console.log('From Made Ups folder')
+console.log('From Yarn and Apparel folder')
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
