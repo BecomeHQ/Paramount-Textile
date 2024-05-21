@@ -7,6 +7,7 @@ module.exports = {
     ['home']: './src/home/index.js',
     ['about']: './src/about/index.js',
     ['initiatives']: './src/initiatives/index.js',
+    ['infrastructure']: './src/infrastructure/index.js',
     ['products']: './src/products/index.js',
     ['products/madeups']: './src/products/madeups/index.js',
     ['products/fabrics']: './src/products/fabrics/index.js',
