@@ -8,6 +8,7 @@ module.exports = {
     ['about']: './src/about/index.js',
     ['initiatives']: './src/initiatives/index.js',
     ['infrastructure']: './src/infrastructure/index.js',
+    ['sustainability']: './src/sustainability/index.js',
     ['products']: './src/products/index.js',
     ['products/madeups']: './src/products/madeups/index.js',
     ['products/fabrics']: './src/products/fabrics/index.js',
