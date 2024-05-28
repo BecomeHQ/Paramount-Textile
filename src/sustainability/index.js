@@ -31,7 +31,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   // Random Cotton Flow
   cottonPlantMoveIx()
-  //   console.log(cottonPlantMoveIx)
 
   // splitType
   splitText()
