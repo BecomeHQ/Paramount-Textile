@@ -10,6 +10,7 @@ module.exports = {
     ['infrastructure']: './src/infrastructure/index.js',
     ['sustainability']: './src/sustainability/index.js',
     ['certificate']: './src/certificate/index.js',
+    ['contact-us']: './src/contact-us/index.js',
     ['products']: './src/products/index.js',
     ['products/madeups']: './src/products/madeups/index.js',
     ['products/fabrics']: './src/products/fabrics/index.js',
