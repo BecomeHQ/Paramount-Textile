@@ -8,6 +8,7 @@ console.log('From Infrastructure folder')
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { cottonPlantMoveIx } from '../helpers/cotton-plant-move'
+import { navlinkHoverIx } from '../helpers/navlink-hover'
 import { scrollbar } from '../helpers/scrollbar'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -18,6 +19,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   // Random Cotton Flow
   cottonPlantMoveIx()
+
+  // Navlink Hover
+  navlinkHoverIx()
 
   const sectionModernInfraIx = () => {
     const tl = gsap.timeline({

@@ -20,6 +20,7 @@ import { productRangeIx, productSectionFeatureIx } from './section-feature'
 import { sectionTestimonyIx } from '../product-common-ix/section-testimonial'
 import { sectionProcessIx } from '../product-common-ix/section-process'
 import { sectionRelatedIx } from '../product-common-ix/section-related'
+import { navlinkHoverIx } from '../../helpers/navlink-hover'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -36,6 +37,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   // Add Scrollbar Ix
   scrollbar()
+
+  // Navlink Hover
+  navlinkHoverIx()
 
   // Header
   const delayIx = headerIx()

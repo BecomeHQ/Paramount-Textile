@@ -3,6 +3,7 @@
  */
 console.log('From Products folder')
 
+import { gsap } from 'gsap'
 import { cottonPlantMoveIx } from '../helpers/cotton-plant-move'
 import { scrollbar } from '../helpers/scrollbar'
 import { navlinkHoverIx } from '../helpers/navlink-hover'
@@ -14,6 +15,9 @@ import { productMockUpIx } from './product-mockups'
 import { sectionProductTop } from './section-product-top'
 
 window.addEventListener('DOMContentLoaded', (event) => {
+  gsap.set('.page-wrapper', {
+    opacity: 1,
+  })
   // Split text. This will run on window resize also
   splitText()
 
