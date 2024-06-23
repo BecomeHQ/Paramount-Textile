@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger)
 export const sectionVideoMaskIx = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
-      trigger: '.video-mask',
+      trigger: '[video-mask]',
       start: () => {
         return window.innerWidth < 480 ? 'top 85%' : 'top 70%'
       },
@@ -31,7 +31,7 @@ export const sectionVideoMaskIx = () => {
   })
 
   tl.fromTo(
-    '.video-mask',
+    '[video-mask]',
     {
       clipPath: 'inset(calc(50% - 20vw) calc(50% - 20vw) round 0.75rem)',
       ease: 'power1.out',
