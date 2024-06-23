@@ -1,0 +1,53 @@
+import { gsap } from 'gsap'
+import { leafIcon, generalTitle, paragraph } from '../helpers/defaults/params'
+
+export const sectionExcellence = () => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.section_excellence',
+      start: 'top 70%',
+    },
+  })
+
+  tl.from('.section_excellence img', leafIcon)
+    .from('.section_excellence h2 .char', generalTitle, '<45%')
+    .from('.section_excellence p .line', paragraph, '<45%')
+
+  // Excellence Timeline
+  const myPath = document.querySelector('.path-one')
+  const length = myPath.getTotalLength()
+
+  const excellenceTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.about_journey-block_wrapper',
+      start: 'top 50%',
+      end: 'bottom 100%',
+      scrub: 1,
+      //   onUpdate: () => {
+      //     console.log(excellenceTl.time())
+      //   },
+    },
+    defaults: {
+      opacity: 0,
+      y: 20,
+    },
+  })
+
+  excellenceTl
+    .from('.path-one', {
+      strokeDashoffset: -length,
+      duration: 8,
+      ease: 'linear',
+      opacity: 1,
+      y: 0,
+    })
+    .from('.about_journey-block.is-1', {}, 0.6)
+    .from('.about_journey-block.is-2', {}, 1.2)
+    .from('.about_journey-block.is-3', {}, 2.1)
+    .from('.about_journey-block.is-4', {}, 3)
+    .from('.about_journey-block.is-5', {}, 4)
+    .from('.about_journey-block.is-6', {}, 4.8)
+    .from('.about_journey-block.is-7', {}, 5.6)
+    .from('.about_journey-block.is-8', {}, 6.3)
+    .from('.about_journey-block.is-9', {}, 7.2)
+}
