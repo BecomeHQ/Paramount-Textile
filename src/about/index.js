@@ -27,7 +27,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
   cottonPlantMoveIx()
 
   // Anchor Hover Ix
-  anchorHoverIx()
+  if (window.innerWidth > 990) {
+    anchorHoverIx()
+  }
 
   // Add Player Video
   playVideo()
