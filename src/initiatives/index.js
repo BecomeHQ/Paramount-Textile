@@ -5,6 +5,7 @@
  */
 console.log('From Initiatives folder')
 
+import gsap from 'gsap'
 import { cottonPlantMoveIx } from '../helpers/cotton-plant-move'
 import { scrollbar } from '../helpers/scrollbar'
 import { navlinkHoverIx } from '../helpers/navlink-hover'
@@ -14,6 +15,10 @@ import { splitText } from '../helpers/split-text'
 import { featureBlockIx } from './feature-block'
 
 window.addEventListener('DOMContentLoaded', (event) => {
+  // Avoid Flash
+  gsap.set('.page-wrapper', {
+    opacity: 1,
+  })
   // SplitText
   splitText()
 
