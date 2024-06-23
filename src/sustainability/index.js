@@ -17,11 +17,14 @@ import { sectionHorizontalIx } from './section-horizontal'
 import { sectionVideoMaskIx } from '../helpers/section-video-mask'
 import { sectionTestimonyIx } from './section-testimonial'
 import { sectionInitiativeIx } from './section-initiatives'
+import { playVideo } from '../helpers/plyr-video'
 
 window.addEventListener('DOMContentLoaded', (event) => {
   gsap.set('.page-wrapper', {
     opacity: 1,
   })
+
+  playVideo()
 
   // Navlink Hover Ix
   navlinkHoverIx()
