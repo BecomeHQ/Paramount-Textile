@@ -62,7 +62,7 @@
 //   setInterval(updateTime, 1000)
 // }
 
-
+/*
 export const calculateTimeZone = () => {
   function getCurrentDateTime(timeZone) {
     const now = new Date();
