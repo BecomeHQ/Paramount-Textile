@@ -134,3 +134,4 @@ export const calculateTimeZone = () => {
   updateTime();
   setInterval(updateTime, 1000);
 };
+*/
